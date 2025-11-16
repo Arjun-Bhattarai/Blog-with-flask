@@ -1,92 +1,31 @@
-# Blog-with-flask
-# 📘 Flask Blog Website
+# 📝 Flask Blog Website
 
-A simple and clean Blog Website built using **Flask**, **SQLAlchemy**, and **Bootstrap**.  
-It includes an **Admin Dashboard**, **Login System**, and complete **CRUD for Blog Posts**.
+A simple and clean blog application built using **Flask**, where users can **create**, **read**, **update**, and **delete** blog posts.  
+This project helped me learn routing, templates, SQLAlchemy, and CRUD operations in Flask.
 
 ---
 
 ## 🚀 Features
-- Admin Login / Logout  
-- Create, Edit, Delete Posts  
-- Category Management  
-- Dashboard for Admin  
-- Public Blog Homepage  
-- Single Post Page  
-- Responsive Design  
-
----
-
-## 📁 Project Structure
-```
-Blog-with-flask/
-│── app.py
-│── models.py
-│── requirements.txt
-│── instance/
-│    └── blog.db
-│── templates/
-│    ├── base.html
-│    ├── home.html
-│    ├── post.html
-│    ├── login.html
-│    ├── dashboard.html
-│    ├── add_post.html
-│    ├── edit_post.html
-│    └── categories.html
-│── static/
-     ├── style.css
-     └── images/
-```
-
----
-
-## ⚙️ Installation & Setup
-
-### 1. Clone the repository
-```
-git clone https://github.com/your-username/Blog-with-flask.git
-cd Blog-with-flask
-```
-
-### 2. Create virtual environment
-```
-python -m venv venv
-```
-
-### 3. Activate virtual environment  
-**Windows**
-```
-venv\Scripts\activate
-```
-**Mac/Linux**
-```
-source venv/bin/activate
-```
-
-### 4. Install dependencies
-```
-pip install -r requirements.txt
-```
-
-### 5. Run the application
-```
-python app.py
-```
-
-Your app will run here:  
-👉 http://127.0.0.1:5000/
+- ✍️ Create new blog posts  
+- 📖 View all posts  
+- 🛠 Edit existing posts  
+- ❌ Delete posts  
+- 🗄 Database using SQLAlchemy  
+- 🎨 Clean and responsive UI using HTML & CSS  
 
 ---
 
 ## 🛠 Tech Stack
-- Flask  
-- SQLAlchemy  
-- Bootstrap  
-- Jinja2  
-- Werkzeug Security  
+- **Backend:** Flask (Python)
+- **Database:** SQLite + SQLAlchemy ORM
+- **Frontend:** HTML, CSS, Bootstrap
+- **Environment:** Virtualenv (venv)
 
 ---
 
-## 📄 License
-Free to use and modify for learning or personal projects.
+## 📦 Setup Instructions
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/yourusername/flask-blog.git
+cd flask-blog
