@@ -59,3 +59,19 @@ def login():
 def logout():
     session.pop("user_id", None)
     return redirect(url_for("main.login"))
+
+@main.route("/add-blogs")
+def blogs():
+    return render_template("add-blogs.html")
+
+@main.route("/add_blog", methods=["POST"])
+def add_blog():
+    title = request.form.get("title")
+    content = request.form.get("content")
+
+    print("Title:", title)
+    print("Content:", content)
+
+    return redirect(url_for("main.home"))
+
+
