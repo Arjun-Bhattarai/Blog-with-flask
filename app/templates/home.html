@@ -25,18 +25,21 @@
               data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="{{ url_for('main.blogs') }}">Add Blogs</a></li>
-              <li><a class="dropdown-item" href="{{ url_for('main.home') }}">Read Blogs</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a class="nav-link active" href="{{ url_for('main.logout') }}">Logout</a></li>
+<li class="nav-item">
+    <a class="nav-link active" href="{{ url_for('main.logout') }}" onclick="return confirm('Are you sure you want to log out?')">
+        Logout
+    </a>
+</li>
         </ul>
       </div>
     </div>
   </nav>
 
   <div class="container mt-5">
-    <h1 class="text-center">Welcome to the Home Page</h1>
-    <p class="text-center">You have successfully logged in.</p>
+    <h1 class="text-center">Welcome to the Page</h1>
+    <p class="text-center">Put your thought over here!</p>
     <hr>
 
     <h2 class="mt-4">All Blogs</h2>
@@ -48,7 +51,7 @@
             <p class="card-text">{{ blog.content }}</p>
           </div>
         </div>
-      {% endfor %}
+      {% endfor %}  
     {% else %}
       <p>No blogs yet. Add some from the "Add Blogs" menu!</p>
     {% endif %}
